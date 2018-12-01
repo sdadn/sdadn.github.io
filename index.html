@@ -29,14 +29,33 @@
 <div class="uk-section uk-section-xsmall uk-section-muted ">
 <div class="uk-container">
         <div uk-grid uk-height-match="target: > div > .uk-card">
+                <div class="uk-width-1-1 uk-flex uk-flex-center">
+                <h3>Muhammad "Saad" Adnan</h3>
+                </div>
+        </div>
 
-        <h3>Muhammad "Saad" Adnan</h3>
+        <div class="uk-grid-divider uk-child-width-expand@s" uk-grid>
+                <div class="uk-width-1-2">
+                <h4>Summary</h4> 
+                <p>Graduate student focusing on cybersecurity, data science and machine learning. </p>
+                <p>Highly organized with the ability to manage multiple projects.</p>
+                <p>Flexible and adaptable to new languages and frameworks with five years of programming experience. 	
+                </p>	
+                </div>
 
-        <p>
-        Graduate student focusing on cybersecurity, data science and machine learning. 
-        Highly organized with the ability to manage multiple projects. 
-        Flexible and adaptable to new languages and frameworks with five years of programming experience. 	
-        </p>	
+                <div class="uk-width-1-2">
+                <h4>Education</h4>  
+                <dl class="uk-description-list uk-description-list-divider">
+                        <dt>Microsoft Technology Associate (MTA)</dt>
+                        <dd>Certified in Software Development Fundamentals. 2018</dd>
+                        
+                        <dt>MS – Computer Engineering, University of Kansas</dt>
+                        <dd>Expected: May 2019.Overall GPA: 3.16</dd>
+        
+                        <dt>BS – Electrical Engineering, University of Kansas</dt>
+                        <dd>Graduated August 2017. Overall GPA: 3.62</dd>
+                </dl>
+                </div>
         </div>
 
 </div>
@@ -47,9 +66,11 @@
 <div class="uk-height-match uk-section uk-section-muted uk-section-xsmall">
 <div class="uk-container">
         
-        <div class="uk-grid-divider uk-child-width-expand@s" uk-grid uk-height-match="target: > div > .uk-card">
+        <!-- <div class="uk-grid-divider uk-child-width-expand@s" uk-grid uk-height-match="target: > div > .uk-card"> -->
+        <div class="uk-grid-divider uk-child-width-expand@s" uk-grid>
+        
                 
-                <h3 class="uk-width-xxlarge uk-margin">Work Experience</h3>  
+                <h4 class="uk-width-xxlarge uk-margin">Work Experience</h4>  
 
                 <div class="uk-width-1-2">
                         <div class="uk-card uk-card-default uk-card-body">
@@ -62,15 +83,15 @@
                                 <hr class"uk-divider-small">
 
                                 <div class="uk-inline">
-                                        <button class="uk-button uk-button-default" type="button">Read More</button>
-                                        <div uk-drop="mode: click ; pos: right-center">
-                                                <div class="uk-card uk-card-secondary uk-card-body uk-card-default">
-                                                        Researching video privacy and security, using C++, JavaScript, Node.js, TensorFlow and OpenCV.
-                                                </div>
-                                        </div>
+                                <ul uk-accordion>
+                                <li >
+                                <a class="uk-accordion-title" href="#">Read More</a>
+                                <div class="uk-accordion-content">
+                                        Researching video privacy and security utilizing C++, video compression and cybersecurity skills. 
                                 </div>
-
-
+                                </li>
+                                </ul>
+                                </div>
                         </div>
                 </div>
                 
@@ -86,54 +107,33 @@
                                 
                                 <hr class"uk-divider-small">
                                 
-                                <div class="uk-inline">
-                                        <button class="uk-button uk-button-default" type="button">Read More</button>
-                                        <div uk-drop="mode: click ; pos: left-center">
-                                                <div class="uk-card uk-card-secondary uk-card-body uk-card-default">
-                                                        <ul class="uk-list uk-list-divider">
-                                                        <li>Managed Computer Support section in absence of supervisor.</li>
-                                                        <li>Provided helpdesk and support to clients with hardware, software and networking problems.</li>
-                                                        <li>Wrote and presented a presentation on introducing Docker to streamline development and to improve web servers.</li>
-                                                        <li>Worked as a fullstack website developer for a prototype inventory system utilizing Laravel and Docker.</li>
-                                                        </ul>
-                                                </div>
+                                <div class="uk-inline"> 
+
+                                <ul uk-accordion>
+                                        <li >
+                                        <a class="uk-accordion-title" href="#">Read More</a>
+                                        <div class="uk-accordion-content">
+                                        <ul class="uk-list uk-list-divider">
+                                                <li>Managed Computer Support section in absence of supervisor.</li>
+                                                <li>Provided helpdesk and support to clients with hardware, software and networking problems.</li>
+                                                <li>Wrote and presented a presentation on introducing Docker to streamline development and to improve web servers.</li>
+                                                <li>Worked as a fullstack website developer for a prototype inventory system utilizing Laravel and Docker.</li>
+                                        </ul>
                                         </div>
+                                        </li>
+                                </ul>
                                 </div>
+                               
                                 
                         </div>
                 </div>
                 
                 
         </div>
-        
-                        
-        </div>
-
 
 </div>
 </div>
                                                 	
-
-<div class="uk-section uk-section-muted uk-section-xsmall">
-                <hr class="uk-divider-icon">
-
-        <div class="uk-container">
-                <h4>Education</h4>  
-        
-        <dl class="uk-description-list uk-description-list-divider">
-                <dt>Microsoft Technology Associate (MTA)</dt>
-                <dd>Certified in Software Development Fundamentals. 2018</dd>
-                
-                <dt>MS – Computer Engineering, University of Kansas</dt>
-                <dd>Expected: May 2019.Overall GPA: 3.16</dd>
-
-                <dt>BS – Electrical Engineering, University of Kansas</dt>
-                <dd>Graduated August 2017. Overall GPA: 3.62</dd>
-        </dl>
-
-        </div>
-</div>
-
 
 <div class="uk-section uk-section-xsmall uk-section-muted">
 <hr class="uk-divider-icon">
@@ -176,8 +176,8 @@
 
 <div class="uk-section uk-section-xsmall uk-section-muted">
 <hr class="uk-divider-icon">
-<div class="uk-container">
-                        This website was built with UIKit 3
+<div class="uk-container uk-flex uk-flex-center">
+                This website was built using UIKit 3
 </div>
 </div>
                              
