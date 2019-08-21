@@ -1,0 +1,28 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+
+@import url('https://fonts.googleapis.com/css?family=B612+Mono&display=swap');
+@import url('https://fonts.googleapis.com/css?family=Darker+Grotesque&display=swap');
+@import url('https://fonts.googleapis.com/css?family=Thasadith&display=swap');
+@import url('https://fonts.googleapis.com/css?family=Open+Sans&display=swap');
+.heading{
+    /* font-family: 'B612 Mono', monospace; */
+    font-family: 'Thasadith', sans-serif;
+
+}
+.bodytext{
+    /* font-family: 'Darker Grotesque', sans-serif; */
+    /* font-family: 'Thasadith', sans-serif; */
+    font-family: 'Open Sans', sans-serif;
+}
+.icon-sm{
+    font-size: 3rem;
+}
+.icon-md{
+    font-size: 5rem;
+}
+.icon-lg{
+    font-size: 7rem;
+}
