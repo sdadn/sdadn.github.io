@@ -20,8 +20,10 @@
 <body class="">
 <div id="root" class="bg-gray-100">
 
+<!-- ======================================================================================= -->
+
     <!-- heading with name and about me -->
-    <div class="flex justify-center bg-gray-300 py-10">
+<div class="flex justify-center bg-gray-300 py-10">
         <div class="flex flex-col w-full  pb-4 text-gray-900">
             <div class="text-center text-5xl w-">
                 <span class="font-thin text-red-700">Saad</span>
@@ -39,32 +41,37 @@
             </div>
 
         </div>
+</div>
+
+<!-- ======================================================================================= -->
+<!-- -------------------- Links -------------------- -->
+
+<div class="flex justify-center bg-white shadow-lg">
+    <div class="flex flex-wrap py-6">
+        <div class="px-10 py-2 hover:text-blue-700"><a href="#workexperience">Work Experience</a></div>
+        <div class="px-10 py-2 hover:text-blue-700"><a href="#education">Education</a></div>
+        <div class="px-10 py-2 hover:text-blue-700"><a href="#skills">Skills</a></div>
+        <div class="px-10 py-2 hover:text-blue-700"><a href="#projects">Notable Projects</a></div>
     </div>
-
-    <!-- links -->
-    <div class="flex justify-center bg-white shadow-lg">
-        <div class="flex flex-wrap py-6">
-            <div class="px-10 py-2 hover:text-blue-700"><a href="#workexperience">Work Experience</a></div>
-            <div class="px-10 py-2 hover:text-blue-700"><a href="#education">Education</a></div>
-            <div class="px-10 py-2 hover:text-blue-700"><a href="#skills">Skills</a></div>
-            <div class="px-10 py-2 hover:text-blue-700"><a href="#projects">Notable Projects</a></div>
-        </div>
-    </div>
+</div>
 
 
-    <!-- Skills -->
+<!-- ======================================================================================= -->
+<!-- -------------------- Skills -------------------- -->
 
 <div class="w-full pt-12 pb-12 "><a name="skills"></a>
 
-    <div class="w-full justify-center py-3 text-center flex">
-        <span class="heading text-3xl text-gray-900">Skills</span>
-    </div>
+    <v-header text="skills" img="https://image.flaticon.com/icons/svg/1341/1341864.svg"></v-header>
+    <v-header text="skills" img="https://image.flaticon.com/icons/svg/306/306437.svg"></v-header>
+    <v-header text="skills" img="https://image.flaticon.com/icons/svg/1211/1211738.svg"></v-header>
+
+   
 
     <div class="flex justify-center ">
         <div class="w=1/2">
         <div class="flex flex-col flex-wrap">
 
-            <v-skill-section section="Programming Languages:">
+            <v-skill-section section="Programming Languages">
                     <devicon icon="csharp"      width="20"></devicon>
                     <devicon icon="cplusplus"   width="20"></devicon>
                     <devicon icon="c"           width="20"  size="sm"></devicon>
@@ -75,7 +82,7 @@
             </v-skill-section>
      
 
-            <v-skill-section section="Developement Tools:">
+            <v-skill-section section="Developement Tools">
                     <devicon icon="npm"           width="24" size="lg"></devicon>
                     <devicon icon="yarn"          width="40" size="lg"></devicon>
                     <devicon icon="git"           width="32" size="md"></devicon>
@@ -87,16 +94,20 @@
                 <devicon icon="intellij"      width="64"  size="lg"></devicon>
             </div>
                 
-            <v-skill-section section="Front End:">
+            <v-skill-section section="Front End">
                     <devicon icon="vuejs" width="24" size="md"></devicon>
                     <devicon icon="html5" width="24" size="md"></devicon>
                     <devicon icon="css3"  width="24" size="md"></devicon>    
-            </v-skill-section>
+                    <img class="w-40 px-2 " src="https://upload.wikimedia.org/wikipedia/commons/a/a1/AJAX_logo_by_gengns.svg" >
+                    <img class="w-32 px-2 " src="https://camo.githubusercontent.com/97517e40f9727cc4637bea2d0e1b813d4639f8b2/68747470733a2f2f7461696c77696e646373732e636f6d2f696d672f7461696c77696e642e737667" >
+                </v-skill-section>
 
-            <v-skill-section section="Back End:">
+            
+            <v-skill-section section="Back End">
                     <devicon icon="laravel" width="24" size="md"></devicon>
                     <devicon icon="docker" width="24" size="md"></devicon>
                     <devicon icon="nginx"  width="32" size="md"></devicon>    
+                    <img class="w-20" src="https://upload.wikimedia.org/wikipedia/commons/thumb/f/f3/Adobe_ColdFusion_Builder_v3.0_icon.png/440px-Adobe_ColdFusion_Builder_v3.0_icon.png" />
 
             </v-skill-section>
 
@@ -105,9 +116,6 @@
                     <devicon icon="linux"    width="20" size="md"></devicon>
                     <devicon icon="windows"  width="20" size="md"></devicon>    
             </v-skill-section>
- 
-
-            
 
             <!-- <img src="img/visualstudio-plain-wordmark.svg" alt="" class="border"> -->
         </div>
@@ -230,149 +238,156 @@
     
 </div> -->
 
+<!-- ======================================================================================= -->
+<!-- -------------------- Work Experience -------------------- -->
 
 
-    <a name="workexperience"></a>
-    <div class="flex bg-white pt-5 pb-10">
+<div class="flex bg-white py-5 pb-10"><a name="workexperience"></a>
+    <div class=" flex-col py-5">
 
+        <v-header text="Work Experience" img="https://image.flaticon.com/icons/svg/1642/1642507.svg"></v-header>
+        <v-header text="Work Experience" img="https://image.flaticon.com/icons/svg/1366/1366504.svg"></v-header>
 
-
-          
-
-
-        <!-- <div class="w-1/3"></div> -->
-        <div class="flex-col ">
-            <div class="flex justify-center py-5 text-3xl">Work Experience</div>
-
-                <div class="flex justify-center">
-                <v-job-item position="Software Developer Intern"
-                            company="Data Access and Support Center, Kansas Geological Survey"
-                            date="May 2019 – present">
-                    Designing, developing and documenting a web application that shows an interactive map of historical Kansas im-agery using JavaScript, Tailwind CSS ColdFusion and supporting tools like yarn, webpack, and the ArcGIS API.
-                </v-job-item>
-                </div>
-
-
-                <div class="flex justify-center ">
-                        <div class=" block rounded-full bg-gray-400 w-1 h-16"></div>
-                </div>
-
-                <div class="flex justify-center">
-                        <v-job-item position="Technical & Research Assistant"
-                                    company="Center for Design Research (CDR)"
-                                    date="August 2018 - present">
-                                    Various duties to assist the class professor such as: leading class discussions, assisting students, & managing the technology used for class projects. 
-                        </v-job-item>
-                </div>
-
-                <div class="flex justify-center ">
-                        <div class=" block rounded-full bg-gray-400 w-1 h-16"></div>
-                </div>
-
-                <div class="flex justify-center">
-                <v-job-item position="Graduate Research Assistant"
-                            company="The Information and Telecommunication Technology Center"
-                            date="August 2018 – May 2019">
-                    Research and designed a privacy-oriented surveillance data sharing system on a blockchain. 
-                </v-job-item>
-                </div>
-
-                <div class="flex justify-center">
-                        <div class=" block rounded-full bg-gray-400 w-1 h-16"></div>
-                </div>
-
-                <div class="flex justify-center">
-                <v-job-item position="Lead Computer Support Assistant"
-                            company="Kansas Geological Survey"
-                            date="May 2016 – August 2018">
-                        Managed Computer Support section in absence of supervisor.
-                        Provided helpdesk and support to clients with hardware, software and networking problems.
-                        Wrote and presented a presentation on introducing Docker to streamline development and to improve web servers.
-                        Worked as a fullstack website developer for a prototype inventory system utilizing Laravel and Docker.
-                </v-job-item>
-                </div>
-    
-                
-            </div>
-            
-    </div>
-
-    <div class="w-full pt-12 pb-12">
-        <a name="projects"></a>
-            <div class="heading text-2xl w-full justify-center py-3 text-center flex">
-                    Notable Projects
-            </div>
-                
-            <div class="flex flex-row justify-center items-center w-full">
-                    
-                    <v-column-item heading="MyJA">
-                        Designed and developed a desktop app to help organize job applications.
-                    </v-column-item>
-    
-                    <v-column-item heading="Nurse Health Tablet">
-                        Designed and developed a desktop app to help organize job applications.
-                    </v-column-item>
-    
-                    <v-column-item heading="Lawrence Bus Tracking system">
-                        Designed and developed a desktop app to help organize job applications.
-                    </v-column-item>
-                    
-            </div>
-                
+        <div class="flex justify-center">
+            <v-job-item position="Software Developer Intern"
+                company="Data Access and Support Center, Kansas Geological Survey" date="May 2019 – present">
+                Designing, developing and documenting a web application that shows an interactive map of historical
+                Kansas im-agery using JavaScript, Tailwind CSS, ColdFusion and supporting tools like yarn, webpack, and
+                the ArcGIS API.
+            </v-job-item>
         </div>
 
-    <div class="flex">
-        <a name="education"></a>
-            <div class="flex items-center flex-row w-full">
-            
-                    
-    
-                <!-- <div class="block w-1 h-full bg-blue-900 rounded-full"></div> -->
-                
-                <div class=" flex-col px-6 py-2 bg-gray-100 w-2/3">
-                        <v-item-education 
-                                            degree="Microsoft Technology Associate (MTA)"
-                                            year="Certified in Software Development Fundamentals."
-                                            gpa="Completed Certification: September 2018"
 
-                        ></v-item-education>
-                        <v-item-education   school="The University of Kansas"
-                                            degree="MS - Computer Engineering"
-                                            gpa="CGPA = 3.53"
-                                            year="Expected: December 2019."
-                        ></v-item-education>
-                        <v-item-education   school="The University of Kansas"
-                                            degree="MS - Computer Engineering"
-                                            gpa="CGPA = 3.62"
-                                            year="Graduated August 2017"
-                        ></v-item-education>
+        <div class="flex justify-center ">
+            <div class=" block rounded-full bg-gray-400 w-1 h-16"></div>
+        </div>
+
+        <div class="flex justify-center">
+            <v-job-item position="Technical & Research Assistant" company="Center for Design Research (CDR)"
+                date="August 2018 - present">
+                Various duties to assist the class professor such as: leading class discussions, assisting students, &
+                managing the technology used for class projects.
+            </v-job-item>
+        </div>
+
+        <div class="flex justify-center ">
+            <div class=" block rounded-full bg-gray-400 w-1 h-16"></div>
+        </div>
+
+        <div class="flex justify-center">
+            <v-job-item position="Graduate Research Assistant"
+                company="The Information and Telecommunication Technology Center" date="August 2018 – May 2019">
+                Research and designed a privacy-oriented surveillance data sharing system on a blockchain.
+            </v-job-item>
+        </div>
+
+        <div class="flex justify-center">
+            <div class=" block rounded-full bg-gray-400 w-1 h-16"></div>
+        </div>
+
+        <div class="flex justify-center">
+            <v-job-item position="Lead Computer Support Assistant" company="Kansas Geological Survey"
+                date="May 2016 – August 2018">
+                Managed Computer Support section in absence of supervisor.
+                Provided helpdesk and support to clients with hardware, software and networking problems.
+                Wrote and presented a presentation on introducing Docker to streamline development and to improve web
+                servers.
+                Worked as a fullstack website developer for a prototype inventory system utilizing Laravel and Docker.
+            </v-job-item>
+        </div>
+
+    </div>
+</div>
+
+
+<!-- ======================================================================================= -->
+<!-- -------------------- Notable Projects -------------------- -->
+
+<div class="w-full pt-12 pb-12"><a name="projects"></a>
+    <v-header text="Notable Projects" img="https://image.flaticon.com/icons/svg/1055/1055646.svg"></v-header>
+    <v-header text="Notable Projects" img="https://image.flaticon.com/icons/svg/1420/1420337.svg"></v-header>
+
+            
+    <div class="flex flex-row justify-center items-center w-full">
+            
+            <v-column-item heading="MyJA">
+                Designed and developed a desktop app to help organize job applications.
+            </v-column-item>
+
+            <v-column-item heading="Nurse Health Tablet">
+                Designed and developed a desktop app to help organize job applications.
+            </v-column-item>
+
+            <v-column-item heading="Lawrence Bus Tracking system">
+                Designed and developed a desktop app to help organize job applications.
+            </v-column-item>
+            
+    </div>
+            
+</div>
+
+
+<!-- ======================================================================================= -->
+<!-- -------------------- Education -------------------- -->
+
+<div class=" bg-white pt-12"><a name="education"></a>
+    <div class="flex justify-center items-center flex-col w-full">
+        <v-header text="Education" img="https://image.flaticon.com/icons/svg/183/183334.svg"></v-header>
+        <v-header text="Education" img="https://image.flaticon.com/icons/svg/183/183338.svg"></v-header>
+        <v-header text="Education" img="https://image.flaticon.com/icons/svg/1651/1651632.svg"></v-header>
+        <v-header text="Education" img="https://image.flaticon.com/icons/svg/1045/1045250.svg"></v-header>
+        <v-header text="Education" img="https://image.flaticon.com/icons/svg/1817/1817722.svg"></v-header>
+
+
+
+            
+                
+        <div class=" flex flex-col justify-center px-6 py-2 ">
+               
+            <v-item-education 
+                                degree="Microsoft Technology Associate (MTA)"
+                                year="Certified in Software Development Fundamentals."
+                                gpa="Completed Certification: September 2018"
+
+            ></v-item-education>
+
+            <div class="">
+            <v-item-education   school="The University of Kansas"
+                                degree="MS - Computer Engineering"
+                                gpa="CGPA = 3.53"
+                                year="Expected: December 2019."
+            ></v-item-education>
+            </div>
+
+            <v-item-education   school="The University of Kansas"
+                                degree="MS - Computer Engineering"
+                                gpa="CGPA = 3.62"
+                                year="Graduated August 2017"
+            ></v-item-education>
         
                     
-                </div>
-
-                <div class="flex content-center flex-wrap  heading w-full justify-center items-center py-3 text-center flex h-full bg-cover bg-center bg-gray-200" style="background-image:url('img/books2.jpg')">
-                    <span class="heading text-4xl text-gray-200">Education</span>
-                </div>
-                
-            </div>
         </div>
+                
+    </div>
+</div>
 
+<!-- ======================================================================================= -->
+<!-- -------------------- Footer -------------------- -->
 
-
-
-
-    
    
 
-    <div class="h-1 block w-full my-5">
-        this site was build using Tailwind CSS & Vue.js
-        Used free images from pixabay.com
-    </div>
+<div class="bg-gray-800 block w-full py-5 text-gray-100">
+    this site was build using Tailwind CSS & Vue.js
+    Used free images from pixabay.com
+</div>
  
 
+<!-- ======================================================================================= -->
 
 </div>
 </body>
+
 <script src="js/svglines.js"></script>
 <script src="js/app.js"></script>
+
 </html>
