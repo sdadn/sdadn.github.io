@@ -3,140 +3,48 @@ Vue.component('devicon',{
     props:["icon", "size", "width", "height"],
     template:`
     <div>
-
-        <div v-if="icon === 'csharp'">
-            <i class="devicon-csharp-plain-wordmark colored"></i>
-        </div>
-        <div v-else-if="icon === 'cplusplus'">
-            <i class="devicon-cplusplus-plain colored"></i>
-        </div>
-        <div v-else-if="icon === 'c'">
-            <i class="devicon-c-plain colored"></i> 
-        </div>
-        <div v-else-if="icon === 'css3'">
-            <i class="devicon-css3-plain-wordmark colored"></i> 
-        </div>  
-        <div v-else-if="icon === 'docker'">
-            <i class="devicon-docker-plain-wordmark colored"></i>
-        </div>    
-            <div v-else-if="icon === 'git'">
-            <i class="devicon-git-plain-wordmark colored"></i> 
-        </div>  
-        <div v-else-if="icon === 'android'">
-            <i class="devicon-android-plain colored"></i> 
-        </div>    
-        <div v-else-if="icon === 'apache'">
-            <i class="devicon-apache-plain colored"></i>
-        </div>   
-        <div v-else-if="icon === 'intellij'">
-            <!-- <i class="devicon-intellij-plain-wordmark colored"></i>  -->
-
-            <!-- <svg id="intelij" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 128 128"><defs><style>.cls-1{fill:#136ba2;}.cls-2{fill:#fa930d;}</style></defs><title>Artboard 12</title><g id="original-wordmark"><path class="cls-1" d="M38.71,61.21V73H37.12V61.21Z"/><path class="cls-1" d="M41.63,66.85c0-.88,0-1.6-.07-2.3H43l.09,1.4h0A3.28,3.28,0,0,1,46,64.36c1.23,0,3.13.7,3.13,3.62V73H47.56v-4.9c0-1.37-.53-2.51-2.05-2.51a2.28,2.28,0,0,0-2.16,1.58,2.14,2.14,0,0,0-.11.72V73H41.63v-6.2Z"/><path class="cls-1" d="M53.66,62.11v2.44H56v1.18H53.66v4.58c0,1.05.31,1.65,1.21,1.65a3.72,3.72,0,0,0,.93-.11L55.88,73a4.09,4.09,0,0,1-1.43.21,2.29,2.29,0,0,1-1.74-.65,3.05,3.05,0,0,1-.62-2.21V65.73H50.71V64.55h1.37v-2Z"/><path class="cls-1" d="M58.57,69.08a2.79,2.79,0,0,0,3,2.95,6.05,6.05,0,0,0,2.45-.44l.28,1.11a7.46,7.46,0,0,1-2.95.53A4,4,0,0,1,57,68.94c0-2.56,1.58-4.58,4.16-4.58,2.9,0,3.66,2.44,3.66,4a5.72,5.72,0,0,1-.05.72ZM63.3,68a2.23,2.23,0,0,0-2.24-2.51A2.61,2.61,0,0,0,58.59,68Z"/><path class="cls-1" d="M66.85,60.58h1.61V73H66.85Z"/><path class="cls-1" d="M71.17,60.58h1.61V73H71.17Z"/><path class="cls-1" d="M77.29,62.16a1,1,0,0,1-2,0,1,1,0,0,1,1-1A.94.94,0,0,1,77.29,62.16ZM75.5,73v-8.5h1.61V73Z"/><path class="cls-1" d="M82.37,61.21H84v7.92c0,3.14-1.61,4.11-3.74,4.11a5.36,5.36,0,0,1-1.7-.28l.24-1.25a4,4,0,0,0,1.34.23c1.43,0,2.27-.61,2.27-2.93v-7.8Z"/><path class="cls-1" d="M91.18,61.21V73h-2.8V61.21Z"/><path class="cls-1" d="M93.6,61.37a26,26,0,0,1,3.77-.25,8.2,8.2,0,0,1,5.06,1.26,5.15,5.15,0,0,1,2.09,4.46,5.89,5.89,0,0,1-2.05,4.79,9.14,9.14,0,0,1-5.7,1.53A25.2,25.2,0,0,1,93.6,73V61.37ZM96.4,71a5.4,5.4,0,0,0,1,.05c2.53,0,4.18-1.32,4.18-4.14,0-2.46-1.48-3.76-3.88-3.76a6.06,6.06,0,0,0-1.26.1Z"/><path class="cls-1" d="M113.69,68h-4.54v2.81h5.08V73h-7.88V61.21H114v2.19h-4.82v2.46h4.54V68Z"/><path class="cls-1" d="M119,70l-.88,3h-2.9L119,61.21h3.66L126.5,73h-3l-1-3Zm3.13-2-.77-2.51c-.22-.7-.44-1.58-.62-2.28h0c-.18.7-.37,1.6-.57,2.28L119.41,68Z"/><path class="cls-2" d="M1.5,64.14a3.29,3.29,0,0,0,3.35,3.21,3.21,3.21,0,1,0,0-6.42A3.28,3.28,0,0,0,1.5,64.14Z"/><path class="cls-1" d="M21.48,52.87c-1.84,0-2.94,1.42-2.94,3.8V71.28c0,2.38,1.1,3.8,2.93,3.8s2.94-1.42,2.94-3.8V66.39h0V56.67C24.42,54.29,23.32,52.87,21.48,52.87Z"/><path class="cls-1" d="M16.34,53.18h-12a2.8,2.8,0,1,0,0,5.6v0h6.16v5.11s0,.08,0,.12h0s0,.07,0,.1a5.51,5.51,0,0,1-5.62,5.39H4.7l0,0H4.43a2.81,2.81,0,1,0,0,5.61h.42a11.26,11.26,0,0,0,11.48-11s0-.07,0-.1h0c0-.24,0-.9,0-1.8v0S16.34,53.43,16.34,53.18Z"/></g></svg> -->
-        </div>   
-        <div v-else-if="icon === 'java'">
-            <i class="devicon-java-plain-wordmark colored"></i>
-        </div>   
-        <div v-else-if="icon === 'javascript'">
-            <i class="devicon-javascript-plain colored"></i> 
-        </div>     
-        <div v-else-if="icon === 'laravel'">
-            <i class="devicon-laravel-plain-wordmark colored"></i>
-        </div>   
-        <div v-else-if="icon === 'linux'">
-            <i class="devicon-linux-plain colored"></i>
-        </div>   
-        <div v-else-if="icon === 'nodejs'">
-            <i class="devicon-nodejs-plain-wordmark colored"></i>
-        </div>   
-        <div v-else-if="icon === 'nginx'">
-            <i class="devicon-nginx-original-wordmark colored"></i>
-        </div>  
-        <div v-else-if="icon === 'php'">
-            <i class="devicon-php-plain colored"></i>
-        </div>   
-        <div v-else-if="icon === 'oracle'">
-            <i class="devicon-oracle-original colored"></i> 
-        </div>    
-        <div v-else-if="icon === 'python'">
-            <i class="devicon-python-plain-wordmark colored"></i>
-        </div>    
-        <div v-else-if="icon === 'visualstudio'">
-            <!-- <i class="devicon-visualstudio-plain-wordmark colored"></i> -->
-
-            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 40 128 50" style="fill:#68217a; " v-bind:class="'border m-1 p-1 icon-' + size + ' w-' + width + ' h-' + height">
-                <defs>
-                  <style>
-                    .a{fill:#68217a;}.b{isolation:isolate;}
-                  </style>
-                </defs>
-                <title>visualstudio</title>
-                <path class="a" d="m17.6 53.27l5.31 2.14v17.18l-5.36 2.14-8.55-8.47-5.4 4.19-2.12-1.07v-10.76l2.14-1 5.38 4.21zm-14 7.55v6.52l3.24-3.34zm8.4 3.18l5.55 4.38v-8.74z"/>
-                <g class="b">
-                  <path class="a" d="m40.53 57.52-4.79 12.94h-1.67l-4.7-12.94h1.69l3.58 10.26a6.13 6.13 0 0 1 0.26 1.15 5.6 5.6 0 0 1 0.3-1.16l3.7-10.25zM42.4 58.87 42.4 58.87"/>
-                  <path class="a" d="m42.4 58.87a0.94 0.94 0 0 1-0.68-0.27 0.91 0.91 0 0 1-0.28-0.69 0.95 0.95 0 0 1 1-1 1 1 0 0 1 0.69 0.28 1 1 0 0 1 0 1.37 1 1 0 0 1-0.73 0.31zm0.72 11.59h-1.48v-9.24h1.48z"/>
-                  <path class="a" d="m45 70.13v-1.59a4.38 4.38 0 0 0 2.66 0.89q2 0 2-1.3a1.12 1.12 0 0 0-0.17-0.63 1.65 1.65 0 0 0-0.49-0.5 3.42 3.42 0 0 0-0.67-0.36l-0.83-0.33a10.58 10.58 0 0 1-1.08-0.49 3.27 3.27 0 0 1-0.78-0.56 2.08 2.08 0 0 1-0.47-0.71 2.51 2.51 0 0 1-0.16-0.93 2.21 2.21 0 0 1 0.3-1.15 2.65 2.65 0 0 1 0.79-0.84 3.73 3.73 0 0 1 1.13-0.51 5 5 0 0 1 1.33-0.12 5.31 5.31 0 0 1 2.15 0.41v1.5a4.18 4.18 0 0 0-2.35-0.67 2.73 2.73 0 0 0-0.75 0.09 1.83 1.83 0 0 0-0.57 0.27 1.24 1.24 0 0 0-0.37 0.41 1.09 1.09 0 0 0-0.13 0.53 1.27 1.27 0 0 0 0.13 0.61 1.34 1.34 0 0 0 0.38 0.43 3 3 0 0 0 0.61 0.34l0.82 0.33a11.32 11.32 0 0 1 1.1 0.48 3.81 3.81 0 0 1 0.83 0.56 2.21 2.21 0 0 1 0.53 0.72 2.31 2.31 0 0 1 0.18 1 2.27 2.27 0 0 1-0.3 1.19 2.59 2.59 0 0 1-0.82 0.8 3.7 3.7 0 0 1-1.16 0.5 5.76 5.76 0 0 1-1.38 0.16 5.22 5.22 0 0 1-2.46-0.53z"/>
-                  <path class="a" d="m60.33 70.46h-1.49v-1.46a3 3 0 0 1-2.84 1.68q-3.3 0-3.3-3.94v-5.52h1.47v5.29q0 2.92 2.24 2.92a2.27 2.27 0 0 0 1.78-0.8 3.06 3.06 0 0 0 0.7-2.09v-5.32h1.48z"/>
-                  <path class="a" d="m69.38 70.46h-1.48v-1.46a3.1 3.1 0 0 1-2.9 1.68 3 3 0 0 1-2.16-0.73 2.53 2.53 0 0 1-0.77-1.95q0-2.59 3.05-3l2.77-0.39q0-2.36-1.9-2.36a4.55 4.55 0 0 0-3 1.14v-1.52a5.72 5.72 0 0 1 3.13-0.87q3.26 0 3.26 3.45zm-1.48-4.68-2.23 0.31a3.61 3.61 0 0 0-1.55 0.51 1.47 1.47 0 0 0-0.52 1.3 1.41 1.41 0 0 0 0.47 1.1 1.86 1.86 0 0 0 1.29 0.43 2.38 2.38 0 0 0 1.82-0.77 2.76 2.76 0 0 0 0.72-2z"/>
-                  <path class="a" d="m73.09 70.46h-1.48v-13.68h1.48z"/>
-                </g>
-                <g class="b">
-                  <path class="a" d="m77.72 69.94v-1.79a3.43 3.43 0 0 0 0.73 0.49 5.9 5.9 0 0 0 0.9 0.37 7.25 7.25 0 0 0 1 0.23 5.3 5.3 0 0 0 0.88 0.08 3.46 3.46 0 0 0 2.09-0.52 1.95 1.95 0 0 0 0.46-2.41 2.58 2.58 0 0 0-0.64-0.71 6.3 6.3 0 0 0-1-0.61l-1.2-0.62q-0.68-0.34-1.26-0.7a5.5 5.5 0 0 1-1-0.78 3.26 3.26 0 0 1-0.68-0.97 3.28 3.28 0 0 1 0.14-2.8 3.34 3.34 0 0 1 1-1.08 4.63 4.63 0 0 1 1.44-0.63 6.58 6.58 0 0 1 1.65-0.21 6.3 6.3 0 0 1 2.79 0.46v1.71a5.06 5.06 0 0 0-2.94-0.79 4.87 4.87 0 0 0-1 0.1 2.8 2.8 0 0 0-0.88 0.34 2 2 0 0 0-0.63 0.6 1.61 1.61 0 0 0-0.24 0.9 1.87 1.87 0 0 0 0.19 0.86 2.1 2.1 0 0 0 0.55 0.66 5.37 5.37 0 0 0 0.88 0.58l1.2 0.61q0.69 0.34 1.32 0.72a6.05 6.05 0 0 1 1.09 0.84 3.75 3.75 0 0 1 0.74 1 2.85 2.85 0 0 1 0.28 1.28 3.26 3.26 0 0 1-0.37 1.62 3.07 3.07 0 0 1-1 1.08 4.42 4.42 0 0 1-1.47 0.6 8 8 0 0 1-1.75 0.19 7.25 7.25 0 0 1-0.76 0c-0.3 0-0.61-0.08-0.92-0.14a7.65 7.65 0 0 1-0.89-0.23 2.77 2.77 0 0 1-0.7-0.33zM91.36 70.37 91.36 70.37"/>
-                  <path class="a" d="m91.36 70.37a2.86 2.86 0 0 1-1.38 0.29q-2.43 0-2.43-2.71v-5.47h-1.55v-1.26h1.59v-2.22l1.41-0.52v2.73h2.33v1.26h-2.33v5.21a2.16 2.16 0 0 0 0.34 1.32 1.26 1.26 0 0 0 1 0.4 1.55 1.55 0 0 0 1-0.31z"/>
-                  <path class="a" d="m100.53 70.46h-1.48v-1.46a3 3 0 0 1-2.85 1.68q-3.3 0-3.3-3.94v-5.52h1.47v5.29q0 2.92 2.24 2.92a2.27 2.27 0 0 0 1.78-0.8 3.06 3.06 0 0 0 0.7-2.09v-5.32h1.48v9.24z"/>
-                  <path class="a" d="m111.13 70.46h-1.48v-1.57a3.42 3.42 0 0 1-3.18 1.79 3.45 3.45 0 0 1-2.79-1.24 5.1 5.1 0 0 1-1-3.38 5.54 5.54 0 0 1 1.16-3.67 3.81 3.81 0 0 1 3-1.39 3 3 0 0 1 2.77 1.5v-5.72h1.48zm-1.48-4.18v-1.36a2.65 2.65 0 0 0-0.74-1.9 2.48 2.48 0 0 0-1.88-0.78 2.56 2.56 0 0 0-2.13 1 4.35 4.35 0 0 0-0.78 2.74 3.91 3.91 0 0 0 0.74 2.52 2.43 2.43 0 0 0 2 0.92 2.53 2.53 0 0 0 2-0.89 3.33 3.33 0 0 0 0.79-2.25z"/>
-                  <path class="a" d="m114.61 58.87a0.93 0.93 0 0 1-0.68-0.27 0.91 0.91 0 0 1-0.28-0.69 1 1 0 0 1 1-1 1 1 0 0 1 0.69 0.28 1 1 0 0 1 0 1.37 1 1 0 0 1-0.73 0.31zm0.72 11.59h-1.48v-9.24h1.48z"/>
-                  <path class="a" d="m121.91 70.68a4.29 4.29 0 0 1-3.27-1.3 4.8 4.8 0 0 1-1.22-3.43 5 5 0 0 1 1.27-3.64 4.58 4.58 0 0 1 3.44-1.31 4.14 4.14 0 0 1 3.23 1.27 5 5 0 0 1 1.16 3.53 5 5 0 0 1-1.25 3.54 4.38 4.38 0 0 1-3.36 1.34zm0.11-8.43a2.82 2.82 0 0 0-2.26 1 4 4 0 0 0-0.83 2.68 3.77 3.77 0 0 0 0.84 2.59 2.85 2.85 0 0 0 2.25 0.95 2.71 2.71 0 0 0 2.21-0.93 4 4 0 0 0 0.77-2.64 4.11 4.11 0 0 0-0.77-2.67 2.69 2.69 0 0 0-2.23-0.98z"/>
-                </g>
-              </svg>
-
-              
-        </div>
-
-        <div v-else-if="icon === 'vuejs'">
-            <i class="devicon-vuejs-plain-wordmark colored"></i> 
-        </div>     
-        <div v-else-if="icon === 'webpack'">
-            <i class="devicon-webpack-plain-wordmark colored"></i>
-        </div>       
-        <div v-else-if="icon === 'apple'">
-            <i class="devicon-apple-original colored"></i>
-
-        </div> 
-        <div v-else-if="icon === 'yarn'">
-            <!-- <div class="flex items-center"> -->
-
-                <div class="border items-center">
-                    <svg id="Yarn" 
-                            xmlns="http://www.w3.org/2000/svg" 
-                            viewBox="0 30 128 70"
-                             style="fill:#2c8ebb;margin-left:auto; margin-right:auto; display:block;" 
-                             v-bind:class="'border m-1 p-1 icon-' + size + ' w-' + width + ' h-' + height">
-                             <defs><style>.cls-1{fill:#2c8ebb;}</style></defs>
-                             <title>Artboard 5</title>
-                             <g id="original-wordmark">
-                                <path class="cls-1" d="M79,63.87a16.8,16.8,0,0,1-3.73,6.75V55.72A2,2,0,0,0,73,53.86c-.59,0-1.1.3-1.1.72A9.14,9.14,0,0,1,72,55.94v6.83c-.51,3-1.78,5.73-3.48,5.73-1.23,0-2-1.23-2-3.52a30.76,30.76,0,0,1,1.23-8.57c.17-.64,1.4-2.33-.68-2.33-2.25,0-2,.85-2.25,1.57a41.45,41.45,0,0,0-1.42,9.55c0,3.69,1.55,6.11,4.39,6.11,1.82,0,3.14-1.23,4.16-2.93v5.39c-2.8,2.46-5.26,4.63-5.26,8.91,0,2.72,1.7,4.88,4.07,4.88,2.16,0,4.41-1.57,4.41-6V74.19a18.42,18.42,0,0,0,6.2-9.42,2,2,0,0,0,0-.42A1.87,1.87,0,0,0,80,62.6c-.42,0-.76.38-1,1.27Zm-8.15,21c-.68,0-1.1-1-1.1-2.33A7.41,7.41,0,0,1,72,77v4.54c0,.81.17,3.35-1.19,3.35Z"/>
-                                <path class="cls-1" d="M91.16,68.46c-1,0-1.44-1-1.44-2v-7a2,2,0,0,0-2.29-1.87c-.59,0-1.1.3-1.1.72a9.14,9.14,0,0,1,.17,1.36v6.54c-.47,1.19-1.23,2.21-2.38,2.21-1.49,0-2.42-1.27-2.42-3.48,0-6.11,3.78-8.87,7-8.87.42,0,.85.08,1.23.08s.55-.25.55-1a1.76,1.76,0,0,0-2-1.78c-5.18,0-10.1,4.33-10.1,11.42,0,3.61,1.74,6.41,5.05,6.41a4.72,4.72,0,0,0,3.65-1.74,3.75,3.75,0,0,0,3.27,1.74c3.65,0,5.35-3.82,6.07-6.62a1.12,1.12,0,0,0,0-.3A1.87,1.87,0,0,0,95,62.6c-.42,0-.85.38-1,1.27-.38,1.87-1.15,4.58-2.84,4.58Z"/>
-                                <path class="cls-1" d="M103.43,71.26c3.65,0,5.31-3.82,6.07-6.62,0-.08,0-.17,0-.3a1.87,1.87,0,0,0-1.49-1.74c-.42,0-.85.38-1,1.27-.38,1.87-1.1,4.58-3.06,4.58-1.15,0-1.7-1.1-1.7-2.29,0-4.24,1.91-9.25,1.91-9.76.17-1-1.53-2.38-2-2.38H99.95a15.82,15.82,0,0,1-2.25-.17A2.69,2.69,0,0,0,95,51.61a2,2,0,0,0-2.12,2,3.12,3.12,0,0,0,1.82,2.72A39.41,39.41,0,0,1,94,63.66c-.38,1.44,1.82,3,2.38,1.19A34,34,0,0,0,97.49,57h3.69a27.53,27.53,0,0,0-2.12,9.38c0,3.73,2.38,4.84,4.37,4.84Z"/>
-                                <path class="cls-1" d="M107.21,69.39a1.78,1.78,0,0,0,2,1.87c1.23,0,1.19-1,1.19-1.82v-6.2c.3-3.35,2.93-7,4.16-7,.81,0,.89,1.1.89,2.42v8.62c0,2.16,1.32,4,3.57,4,3.65,0,5.45-3.82,6.18-6.62a1.12,1.12,0,0,0,0-.3,1.87,1.87,0,0,0-1.49-1.74c-.42,0-.85.38-1,1.27-.38,1.87-1.25,4.58-2.95,4.58-1.1,0-1.1-1.57-1.1-2V57.72c0-2-.68-4.29-3.52-4.29-2.08,0-3.61,1.82-4.75,4.2V55.72a2,2,0,0,0-2.29-1.87c-.59,0-1.1.3-1.1.72a9.14,9.14,0,0,1,.17,1.36V69.39Zm-77,22.09M57.7,64"/>
-                                <g id="icon">
-                                    <path class="cls-1" d="M45.35,71.28a9.82,9.82,0,0,0-4.94,1.86c-2.62,1.62-3.92,1.51-3.92,1.51l0-.07c-.18-.29.83-2.91-.3-6-1.23-3.41-3.18-4.23-3-4.49a16.2,16.2,0,0,0,3-6.25c.4-2,.29-5.35-.6-7.09-.17-.32-1.65.54-1.65.54a21.21,21.21,0,0,0-1.77-3.34c-1.25-.8-2.61,3.32-2.61,3.32a6.09,6.09,0,0,0-5.1,2,4.2,4.2,0,0,1-1.68,1c-.18.06-.4.05-.94,1.51-.83,2.23,1.41,4.71,1.41,4.71a12.07,12.07,0,0,0-3.66,4.23,10.79,10.79,0,0,0-.76,5.09s-1.9,1.65-2,3.35a5.6,5.6,0,0,0,.77,3.41.84.84,0,0,0,1.15.4s-1.26,1.47-.08,2.1,2.89.89,3.85-.08c.7-.7.83-2.25,1.09-2.89.06-.15.27.25.47.45a4.35,4.35,0,0,0,.59.44,1.82,1.82,0,0,0-1,2.4c.23.55,1.05.91,2.4.9a71.93,71.93,0,0,0,7.45-.67,1.89,1.89,0,0,0,1.14-.64,27.45,27.45,0,0,0,6.74-3.05,12.13,12.13,0,0,1,4.58-2.11A1.25,1.25,0,0,0,45.35,71.28Z"/>
-                                    <path class="cls-1" d="M30,37A27,27,0,1,0,57,64,27,27,0,0,0,30,37ZM46.24,75.25a10.83,10.83,0,0,0-4.1,1.9,29.18,29.18,0,0,1-6.78,3.13,3.79,3.79,0,0,1-1.58.77,68.25,68.25,0,0,1-7.8.71h-.1a4.26,4.26,0,0,1-3.26-1.11,5.45,5.45,0,0,1-4.77-.3,2.42,2.42,0,0,1-1.29-1.7,2.6,2.6,0,0,1,0-.9,2.9,2.9,0,0,1-.34-.44,7.14,7.14,0,0,1-1-4.38,6.85,6.85,0,0,1,2-3.85A12.44,12.44,0,0,1,18.07,64a11.68,11.68,0,0,1,3-3.91,5.82,5.82,0,0,1-.74-5c.51-1.36.93-2.11,1.85-2.43h0a3,3,0,0,0,1.09-.58,7.69,7.69,0,0,1,5.17-2.48c.08-.21.18-.42.28-.64A4.6,4.6,0,0,1,31,46.37a2.13,2.13,0,0,1,1.92.22c.28.19.65.42,1.7,2.6a2,2,0,0,1,1.24,0,1.66,1.66,0,0,1,1,.84c1.07,2.06,1.22,5.74.75,8.11a14.72,14.72,0,0,1-2.54,5.8A11.21,11.21,0,0,1,37.61,68a11.07,11.07,0,0,1,.62,4.53,12.5,12.5,0,0,0,1.36-.74,11.36,11.36,0,0,1,5.74-2.1,2.88,2.88,0,0,1,3,2.48A2.77,2.77,0,0,1,46.24,75.25Z"/>
-                                </g>
-                            </g>
-                    </svg>
-                </div> 
-            </div> 
-                
-        </div> 
-        <div v-else-if="icon === 'npm'">
-                <div class="border items-center">
-
-            <svg id="NPM"  xmlns="http://www.w3.org/2000/svg" viewBox="0 0 128 128" style="fill:#cb3837;" v-bind:class="'border m-1 p-1 icon-' + size + ' w-' + width + ' h-' + height"><defs><style>.cls-1{fill:#cb3837;}</style></defs><title>Artboard 5</title><path id="original-wordmark" class="cls-1" d="M2,38.5H126V82.21H64V89.5H36.44V82.21H2ZM8.89,74.93H22.67V53.07h6.89V74.93h6.89V45.79H8.89ZM43.33,45.79V82.21H57.11V74.93H70.89V45.79Zm13.78,7.29H64V67.64H57.11Zm20.67-7.29V74.93H91.56V53.07h6.89V74.93h6.89V53.07h6.89V74.93h6.89V45.79Z"/></svg>
-            </div>
-        </div> 
+ <!-- <div v-bind:class="'border m-1 p-1 icon-' + size + ' w-' + width + ' h-' + height"> -->
+        <div v-if="     icon === 'android'"     v-bind:class="' m-1 p-1 icon-' + size + ' w-' + width + ' h-' + height">${android}</div>
+        <div v-else-if="icon === 'apple'"       v-bind:class="' m-1 p-1 icon-' + size + ' w-' + width + ' h-' + height">${apple} </div>  
+        <div v-else-if="icon === 'csharp'"      v-bind:class="' m-1 p-1 icon-' + size + ' w-' + width + ' h-' + height">${csharp}</div>
+        <div v-else-if="icon === 'cplusplus'"   v-bind:class="' m-1 p-1 icon-' + size + ' w-' + width + ' h-' + height">${cplusplus}</div> 
+        <div v-else-if="icon === 'c'"           v-bind:class="' m-1 p-1 icon-' + size + ' w-' + width + ' h-' + height">${c}</div>
+        <div v-else-if="icon === 'css3'"        v-bind:class="' m-1 p-1 icon-' + size + ' w-' + width + ' h-' + height">${css3}</div>
+        <div v-else-if="icon === 'docker'"      v-bind:class="' m-1 p-1 icon-' + size + ' w-' + width + ' h-' + height">${docker}</div>
+        <div v-else-if="icon === 'git'"         v-bind:class="' m-1 p-1 icon-' + size + ' w-' + width + ' h-' + height">${git}</div>
+        <div v-else-if="icon === 'html5'"       v-bind:class="' m-1 p-1 icon-' + size + ' w-' + width + ' h-' + height">${html5}</div>
+        <div v-else-if="icon === 'intellij'"    v-bind:class="' m-1 p-1 icon-' + size + ' w-' + width + ' h-' + height">${intellij}</div>
+        <div v-else-if="icon === 'java'"        v-bind:class="' m-1 p-1 icon-' + size + ' w-' + width + ' h-' + height">${java}</div>
+        <div v-else-if="icon === 'javascript'"  v-bind:class="' m-1 p-1 icon-' + size + ' w-' + width + ' h-' + height">${javascript}</div>
+        <div v-else-if="icon === 'laravel'"     v-bind:class="' m-1 p-1 icon-' + size + ' w-' + width + ' h-' + height">${laravel}</div>          
+        <div v-else-if="icon === 'linux'"       v-bind:class="' m-1 p-1 icon-' + size + ' w-' + width + ' h-' + height">${linux}</div>
+        <div v-else-if="icon === 'nginx'"       v-bind:class="' m-1 p-1 icon-' + size + ' w-' + width + ' h-' + height">${nginx}</div>
+        <div v-else-if="icon === 'nodejs'"      v-bind:class="' m-1 p-1 icon-' + size + ' w-' + width + ' h-' + height">${nodejs}</div>
+        <div v-else-if="icon === 'npm'"         v-bind:class="' m-1 p-1 icon-' + size + ' w-' + width + ' h-' + height">${npm}</div>
+        <div v-else-if="icon === 'mysql'"       v-bind:class="' m-1 p-1 icon-' + size + ' w-' + width + ' h-' + height">${mysql}</div>          
+        <div v-else-if="icon === 'oracle'"      v-bind:class="' m-1 p-1 icon-' + size + ' w-' + width + ' h-' + height">${oracle}</div>
+        <div v-else-if="icon === 'php'"         v-bind:class="' m-1 p-1 icon-' + size + ' w-' + width + ' h-' + height">${php}</div>
+        <div v-else-if="icon === 'python'"      v-bind:class="' m-1 p-1 icon-' + size + ' w-' + width + ' h-' + height">${python}</div>
+        <div v-else-if="icon === 'visualstudio'"v-bind:class="' m-1 p-1 icon-' + size + ' w-' + width + ' h-' + height">${visualstudio}</div>
+        <div v-else-if="icon === 'vuejs'"       v-bind:class="' m-1 p-1 icon-' + size + ' w-' + width + ' h-' + height">${vuejs}</div>
+        <div v-else-if="icon === 'webpack'"     v-bind:class="' m-1 p-1 icon-' + size + ' w-' + width + ' h-' + height">${webpack}</div>
+        <div v-else-if="icon === 'windows'"     v-bind:class="' m-1 p-1 icon-' + size + ' w-' + width + ' h-' + height">${windows}</div>
+        <div v-else-if="icon === 'yarn'"        v-bind:class="' m-1 p-1 icon-' + size + ' w-' + width + ' h-' + height">${yarn}</div>
 
     </div>
     `
+});
+
+Vue.component('v-skill-section',{
+    props:['section'],
+    template:`     
+             <div class="flex flex-col justify-start mt-4">
+            <span>{{section}}</span>
+            
+            <div class="flex flex-wrap justify-center items-center">
+                <slot></slot>
+            </div>
+        </div>`
 });
 
 Vue.component('v-job-item',{

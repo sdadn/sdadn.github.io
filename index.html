@@ -62,55 +62,51 @@
 
     <div class="flex justify-center ">
         <div class="w=1/2">
-        <div class="flex flex-col">
+        <div class="flex flex-col flex-wrap">
+
+            <v-skill-section section="Programming Languages:">
+                    <devicon icon="csharp"      width="20"></devicon>
+                    <devicon icon="cplusplus"   width="20"></devicon>
+                    <devicon icon="c"           width="20"  size="sm"></devicon>
+                    <devicon icon="javascript"  width="20"  size="sm"></devicon>
+                    <devicon icon="php"         width="24"  size="sm"></devicon>
+                    <devicon icon="python"      width="32"  size="sm"></devicon>
+                    <devicon icon="java"        width="20"  size="sm"></devicon>
+            </v-skill-section>
      
-            <div class="flex flex-col justify-start">
-                <span>Programming Languages:</span>
+
+            <v-skill-section section="Developement Tools:">
+                    <devicon icon="npm"           width="24" size="lg"></devicon>
+                    <devicon icon="yarn"          width="40" size="lg"></devicon>
+                    <devicon icon="git"           width="32" size="md"></devicon>
+                    <devicon icon="android"       width="32" size="md"></devicon>
+            </v-skill-section>
+
+            <div class="flex flex-row justify-center">
+                <devicon icon="visualstudio"  width="64" size="lg"></devicon>
+                <devicon icon="intellij"      width="64"  size="lg"></devicon>
+            </div>
                 
-                <div class="flex flex-row justify-center">
-                    <devicon icon="csharp" size="sm"></devicon>
-                    <devicon icon="cplusplus" size="sm"></devicon>
-                    <devicon icon="c" size="sm"></devicon>
-                    <devicon icon="javascript" size="sm"></devicon>
-                    <devicon icon="php" size="sm"></devicon>
-                    <devicon icon="python" size="sm"></devicon>
+            <v-skill-section section="Front End:">
+                    <devicon icon="vuejs" width="24" size="md"></devicon>
+                    <devicon icon="html5" width="24" size="md"></devicon>
+                    <devicon icon="css3"  width="24" size="md"></devicon>    
+            </v-skill-section>
 
-                </div>
-            </div>
+            <v-skill-section section="Back End:">
+                    <devicon icon="laravel" width="24" size="md"></devicon>
+                    <devicon icon="docker" width="24" size="md"></devicon>
+                    <devicon icon="nginx"  width="32" size="md"></devicon>    
 
-            <div class="flex flex-col justify-start ">
-                <span>Developement tools:</span> 
-                    
-                    <div class="flex flex-wrap h-20 items-center">
-                            <!-- <devicon icon="intellij" size="lg"></devicon> -->
-                            <devicon icon="visualstudio" size="lg" width="40"></devicon>
-                            <devicon icon="npm" size="lg" width="20"></devicon>
-                            <devicon icon="yarn" size="lg" width="20"></devicon>
-                            <devicon icon="git" size="md"></devicon>
-                    </div>
+            </v-skill-section>
 
-            </div>
+            <v-skill-section section="Operating systems">
+                    <devicon icon="apple"    width="20" size="md"></devicon>
+                    <devicon icon="linux"    width="20" size="md"></devicon>
+                    <devicon icon="windows"  width="20" size="md"></devicon>    
+            </v-skill-section>
+ 
 
-            <div class="flex flex-col justify-start">
-                <span>Front End:</span>
-                
-                <div class="flex flex-row justify-center">
-                    <devicon icon="vuejs" size="md"></devicon>
-                    <devicon icon="html5" size="md"></devicon>
-                    <devicon icon="css3" size="md"></devicon>      
-                </div>
-            </div>
-
-            <div class="flex flex-col justify-start">
-                    <span>Server Side Developement:</span>
-                    
-                    <div class="flex flex-row justify-center">
-                        <devicon icon="docker" size="md"></devicon>
-                        <devicon icon="nodejs" size="lg"></devicon>
-                        <devicon icon="laravel" size="md"></devicon> 
-                        <devicon icon="oracle" size="lg"></devicon>      
-                    </div>
-            </div>
             
 
             <!-- <img src="img/visualstudio-plain-wordmark.svg" alt="" class="border"> -->
@@ -377,5 +373,6 @@
 
 </div>
 </body>
+<script src="js/svglines.js"></script>
 <script src="js/app.js"></script>
 </html>
