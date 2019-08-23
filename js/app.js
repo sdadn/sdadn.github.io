@@ -34,6 +34,13 @@ Vue.component('devicon',{
     </div>
     `
 });
+Vue.component('linkedinbtn',{
+    template:`<div class="flex justify-center pt-5">
+        <div class=" h-10 w-10 fill-current text-gray-700 hover:text-blue-600">
+            ${linkedin}
+        </div>
+    </div>`
+});
 
 Vue.component('v-skill-section',{
     props:['section'],
