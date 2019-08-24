@@ -96,7 +96,7 @@ Vue.component('v-list-item',{
 Vue.component('v-column-item',{
     props:['heading', 'body', 'image'],
     template:`
-             <div class="flex flex-col text-center w-1/4 mx-6 px-1">
+             <div class="flex flex-col text-center w-1/4 mx-6 px-1 py-10">
                 <div class="heading font-bold">{{heading}}</div>
                 <div class="text-gray-900 bodytext pt-1 pb-2 text-left"><slot><slot></div>
             </div>`
