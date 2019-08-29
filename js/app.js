@@ -11,6 +11,8 @@ Vue.component('devicon',{
         <div v-else-if="icon === 'c'"           v-bind:class="' m-1 py-1 px-2 icon-' + size + ' w-' + width + ' h-' + height">${c}</div>
         <div v-else-if="icon === 'css3'"        v-bind:class="' m-1 py-1 px-2 icon-' + size + ' w-' + width + ' h-' + height">${css3}</div>
         <div v-else-if="icon === 'docker'"      v-bind:class="' m-1 py-1 px-2 icon-' + size + ' w-' + width + ' h-' + height">${docker}</div>
+        <div v-else-if="icon === 'dotnet'"      v-bind:class="' m-1 py-1 px-2 icon-' + size + ' w-' + width + ' h-' + height">${dotnet}</div>
+        <div v-else-if="icon === 'electronjs'"  v-bind:class="' m-1 py-1 px-2 icon-' + size + ' w-' + width + ' h-' + height">${electronjs}</div>
         <div v-else-if="icon === 'git'"         v-bind:class="' m-1 py-1 px-2 icon-' + size + ' w-' + width + ' h-' + height">${git}</div>
         <div v-else-if="icon === 'html5'"       v-bind:class="' m-1 py-1 px-2 icon-' + size + ' w-' + width + ' h-' + height">${html5}</div>
         <div v-else-if="icon === 'intellij'"    v-bind:class="' m-1 py-1 px-2 icon-' + size + ' w-' + width + ' h-' + height">${intellij}</div>
