@@ -73,7 +73,7 @@ Vue.component('v-job-item',{
                 <div class="heading font-bold text-blue-900">{{position}}</div>
                 <div class="heading font-light">{{company}}</div>
                 <div class="heading font-normal text-gray-800 pl-3">{{date}}</div>
-                <div class="text-gray-900 bodytext pt-1 pb-2 "><slot><slot></div>
+                <div class="text-gray-900 bodytext pt-1 pb-2 "><slot></slot></div>
             </div>`
 });
 
@@ -91,17 +91,37 @@ Vue.component('v-list-item',{
     props:['heading', 'body'],
     template:`<div>
                 <div class="heading font-bold">{{heading}}</div>
-                <div class="text-gray-900 bodytext pt-1 pb-2"><slot><slot></div>
+                <div class="text-gray-900 bodytext pt-1 pb-2"><slot></slot></div>
             </div>`
 });
 
 Vue.component('v-column-item',{
     props:['heading', 'body', 'image'],
     template:`
-             <div class="flex flex-col text-center w-1/4 mx-6 px-1 py-10">
-                <div class="heading font-bold">{{heading}}</div>
-                <div class="text-gray-900 bodytext pt-1 pb-2 text-left"><slot><slot></div>
-            </div>`
+             <div class="flex flex-col text-center w-1/3 my-2 mx-6 bg-white hover:bg-blue-100 rounded-lg border ">
+                <!-- <div class="flex justify-center rounded-t-lg py-2"> -->
+                <div class="flex justify-center rounded-t-lg py-2 h-64" v-bind:style="this.$data.style">
+                <!-- <div class="flex justify-center rounded-t-lg py-2 h-64s" style="background-image: url(img/projectheaders/myjalogo.png) "> -->
+
+                        <style>.test{
+                            background-repeat: no-repeat;
+                        }
+                            
+                            </style>
+                    <!-- <img v-bind:src="image" class="h-48" alt=""> -->
+                </div>
+                <div class="heading font-bold py-4">{{heading}}</div>
+                <div class="text-gray-800 bodytext pt-1 pb-2 px-4 text-left"><slot></slot></div>
+            </div>`,
+    data() {
+        return {
+            style: ""
+        }
+    },
+    mounted() {
+         this.style = ` background-image: url(${this.$props.image}); background-size: contain; background-repeate: none; background-repeat: no-repeat; background-position: center; `;
+         // alert(this.style);
+    },
 });
 
 
