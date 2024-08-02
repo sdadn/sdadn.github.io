@@ -1,17 +1,11 @@
 {
   "name": "sdadn.github.io",
   "version": "1.1.0",
-  "main": "index.html",
+  "main": "",
   "repository": "https://github.com/sdadn/sdadn.github.io.git",
   "author": "Saad",
-  "license": "MIT",
   "dependencies": {
-    "devicon": "^2.2.0",
-    "live-server": "^1.2.1",
-    "liveserver": "^0.1.20",
-    "tailwindcss": "^1.0.6"
   },
   "scripts": {
-    "buildtw": "./node_modules/.bin/tailwind build css/tailwind_init.css -o css/tailwind.css"
   }
 }
