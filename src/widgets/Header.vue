@@ -9,7 +9,7 @@
   </div>
 </div>
 <div class="text-right pr-2 py-2">
-This site was built using: vite, vute & tailwind
+This site was built using: vite, vue & tailwind.
 </div>
 </template>
 
