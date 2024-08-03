@@ -1,25 +1,25 @@
 <template>
-  <div class="p-4">
-    <h1>Skills</h1>
+<section-container title="Skills">
 
-    <div>Programming languages</div>
+    <h2>Programming languages</h2>
     <div class="flex flex-row">
       <img v-for="icon in languageIcons" v-bind:src="icon" class="h-20 pr-2">
     </div>
 
-    <div>Web Development Icons</div>
+    <h2>Web Development Icons</h2>
     <div class="flex flex-row">
       <img v-for="icon in webDevelopmentIcons" v-bind:src="icon" class="h-20 pr-2">
     </div>
 
-    <div>Other Programming tools</div>
+    <h2>Other Programming tools</h2>
     <div class="flex flex-row">
       <img v-for="icon in iconURLS" v-bind:src="icon" class="h-20 pr-2">
     </div>
-  </div>
+</section-container>
 </template>
 
 <script setup>
+import SectionContainer from "../components/SectionContainer.vue";
 
 const languageIcons = {
   c: "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/c/c-original.svg",
