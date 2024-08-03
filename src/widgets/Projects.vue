@@ -1,27 +1,18 @@
 <template>
-<div>
+<div class="p-5">
   <div>
     Projects
   </div>
   
-  <div class="grid grid-cols-4">
-
-  <div v-for="project in PROJECTS" class="border p-1 m-1">
-    <div>{{project.name}}</div>
-    <div>{{project.year}}</div>
-    <div class="flex flex-row">
-        <div v-for="tag in project.tags" class="mr-1">
-            {{tag}}
-        </div> 
-    </div>
-    <div>{{project.description}}</div>
-  </div>
+  <div class="grid grid-cols-4 flex flex-wrap">
+      <project-cards v-for="project in PROJECTS" v-bind:project="project"/>
   </div>
 
 </div>
 </template>
 
 <script setup>
+import ProjectCards from "../components/ProjectCards.vue";
 import {PROJECTS} from "../content";
 
 </script>

@@ -15,8 +15,8 @@ const PROJECTS = {
     tags: ["iOS", "Swift", "Web"]
   },
   ledLights: {
-    name: "Bus Tracking system",
-    year: "2017",
+    name: "Wireless traffic lights",
+    year: "2016",
     description: "Collaborated on a team of 3 people to develop wirelessly controlled lights using an Arduino Uno and Bluetooth module.",
     tags: ["Arduino", "C", "Circuits"]
   },
