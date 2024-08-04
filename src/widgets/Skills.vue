@@ -1,17 +1,17 @@
 <template>
 <section-container title="Skills">
 
-    <h2>Programming languages</h2>
+    <h2 class="pb-5">Programming languages</h2>
     <div class="flex flex-row">
       <img v-for="icon in languageIcons" v-bind:src="icon" class="h-20 pr-2">
     </div>
 
-    <h2>Web Development Icons</h2>
+    <h2 class="pt-10 pb-5">Web Development Icons</h2>
     <div class="flex flex-row">
       <img v-for="icon in webDevelopmentIcons" v-bind:src="icon" class="h-20 pr-2">
     </div>
 
-    <h2>Other Programming tools</h2>
+    <h2 class="pt-10 pb-5">Other Programming tools</h2>
     <div class="flex flex-row">
       <img v-for="icon in iconURLS" v-bind:src="icon" class="h-20 pr-2">
     </div>
