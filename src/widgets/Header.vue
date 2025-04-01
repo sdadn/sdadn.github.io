@@ -12,7 +12,7 @@
 </template>
 
 <script setup>
-import {SUMMARY} from "../content";
+import {SUMMARY} from "../../data/content";
 
 
 
