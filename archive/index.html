@@ -1,0 +1,435 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    
+    <title>Saad Adnan's Portfolio</title>
+    
+    <link rel="stylesheet" href="css/tailwind.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/devicon/2.2/devicon.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/devicon/2.2/devicon-colors.min.css">
+    <!-- <link rel="stylesheet" href="https://cdn.rawgit.com/konpa/devicon/df6431e323547add1b4cf45992913f15286456d3/devicon.min.css"> -->
+
+    <script src="https://npmcdn.com/vue/dist/vue.js"></script>
+
+</head>
+
+<body class="">
+<div id="root" class="bg-gray-100">
+
+<!-- ======================================================================================= -->
+
+    <!-- heading with name and about me -->
+<div class="flex justify-center bg-gray-300 py-10">
+        <div class="flex flex-col w-full  pb-4 text-gray-900">
+            <div class="text-center text-5xl w-">
+                <span class="font-thin text-red-700">Saad</span>
+                <span class="text-gray-900">Adnan</span>
+            </div>
+            <div class="text-center pt-1 text-xl">
+                 Software Engineer
+            </div>
+            <div>
+              <a href="https://www.linkedin.com/in/saad-adnan-57a84992/" target="_blank"><linkedinbtn></linkedinbtn></a>
+            </div>
+            <div class="flex justify-center text-left pt-10 pb-3 text-2xl">
+                About Me
+            </div>
+
+            <div class=" flex justify-center ">
+                <div class="text-center w-2/3">
+                    Graduate student focusing on cybersecurity and data privacy. Flexible to new technologies and highly organized with the ability to manage multiple projects.
+                </div>
+            </div>
+
+        </div>
+</div>
+
+<!-- ======================================================================================= -->
+<!-- -------------------- Links -------------------- -->
+
+<div class="flex justify-center bg-white shadow-lg">
+    <div class="flex flex-wrap py-6">
+        <div class="px-10 py-2 hover:text-blue-700"><a href="#skills">Skills</a></div>
+        <div class="px-10 py-2 hover:text-blue-700"><a href="#workexperience">Work Experience</a></div>
+        <div class="px-10 py-2 hover:text-blue-700"><a href="#projects">Notable Projects</a></div>
+        <div class="px-10 py-2 hover:text-blue-700"><a href="#education">Education</a></div>
+    </div>
+</div>
+
+
+<!-- ======================================================================================= -->
+<!-- -------------------- Skills -------------------- -->
+
+<div class="w-full pt-12 pb-12 "><a name="skills"></a>
+
+    <v-header text="skills" img="https://image.flaticon.com/icons/svg/1341/1341864.svg"></v-header>
+    <!-- <v-header text="skills" img="https://image.flaticon.com/icons/svg/306/306437.svg"></v-header> -->
+    <!-- <v-header text="skills" img="https://image.flaticon.com/icons/svg/1211/1211738.svg"></v-header> -->
+
+   
+
+    <div class="flex justify-center ">
+        <div class="w=1/2">
+        <div class="flex flex-col flex-wrap">
+
+            <v-skill-section section="Programming Languages">
+                    <devicon icon="csharp"      width="20"></devicon>
+                    <devicon icon="cplusplus"   width="20"></devicon>
+                    <devicon icon="c"           width="20"  size="sm"></devicon>
+                    <devicon icon="javascript"  width="20"  size="sm"></devicon>
+                    <devicon icon="php"         width="24"  size="sm"></devicon>
+                    <devicon icon="python"      width="32"  size="sm"></devicon>
+                    <devicon icon="java"        width="20"  size="sm"></devicon>
+            </v-skill-section>
+     
+
+            <v-skill-section section="Developement Tools">
+                    <devicon icon="npm"           width="24" size="lg"></devicon>
+                    <devicon icon="yarn"          width="40" size="lg"></devicon>
+                    <devicon icon="git"           width="32" size="md"></devicon>
+            </v-skill-section>
+
+            <div class="flex flex-row justify-center">
+                <devicon icon="visualstudio"  width="64" size="lg"></devicon>
+                <devicon icon="intellij"      width="64"  size="lg"></devicon>
+            </div>
+
+            <v-skill-section section="App Developement">
+                <devicon icon="electronjs"    width="64"></devicon>
+                <devicon icon="dotnet"       width="24" size="md"></devicon>
+                <devicon icon="android"       width="24" size="md"></devicon>
+                <img class="w-56 px-2 " src="https://icon-library.net/images/xamarin-icon/xamarin-icon-6.jpg" alt="">
+            </v-skill-section>
+                
+            <v-skill-section section="Front End">
+                    <devicon icon="vuejs" width="24" size="md"></devicon>
+                    <devicon icon="html5" width="24" size="md"></devicon>
+                    <devicon icon="css3"  width="24" size="md"></devicon>    
+                    <img class="w-40 px-2 " src="https://upload.wikimedia.org/wikipedia/commons/a/a1/AJAX_logo_by_gengns.svg" >
+                    <img class="w-32 px-2 " src="https://camo.githubusercontent.com/97517e40f9727cc4637bea2d0e1b813d4639f8b2/68747470733a2f2f7461696c77696e646373732e636f6d2f696d672f7461696c77696e642e737667">                </v-skill-section>
+
+            
+            <v-skill-section section="Back End">
+                    <devicon icon="laravel" width="24" size="md"></devicon>
+                    <devicon icon="docker" width="24" size="md"></devicon>
+                    <devicon icon="nginx"  width="32" size="md"></devicon>    
+                    <img class="w-20" src="https://upload.wikimedia.org/wikipedia/commons/thumb/f/f3/Adobe_ColdFusion_Builder_v3.0_icon.png/440px-Adobe_ColdFusion_Builder_v3.0_icon.png" />
+
+            </v-skill-section>
+
+            <v-skill-section section="Operating systems">
+                    <devicon icon="apple"    width="20" size="md"></devicon>
+                    <devicon icon="linux"    width="20" size="md"></devicon>
+                    <devicon icon="windows"  width="20" size="md"></devicon>    
+            </v-skill-section>
+
+            <v-skill-section section="Graphics">
+                <img class="w-40 px-2" src="http://resources.mynewsdesk.com/image/upload/c_limit,dpr_2.0,f_auto,h_700,q_auto,w_690/ir6go5pvmbjs99sajspx.jpg" alt="">
+                <img class="w-40 px-2" src="https://download.blender.org/branding/blender_logo.png" alt="">
+                <img class="w-40 px-2" src="http://publish.illinois.edu/commonsknowledge/files/2017/04/gimp-card.png" alt="">
+            </v-skill-section>
+
+
+            <!-- <img src="img/visualstudio-plain-wordmark.svg" alt="" class="border"> -->
+        </div>
+        </div>
+
+
+    </div>
+</div>
+
+   
+
+<!-- <div class="flex items-center justify-center">
+
+        <div class="max-w-xl mx-auto my-4 border-b-2 pb-4">	
+                <div class="flex pb-3">
+                    <div class="flex-1">
+                    </div>
+            
+                    <div class="flex-1">
+                        <div class="w-10 h-10 bg-green mx-auto rounded-full text-lg text-white flex items-center">
+                            <span class="text-white text-center w-full"><i class="fa fa-check w-full fill-current white"></i></span>
+                        </div>
+                    </div>
+            
+            
+                    <div class="w-1/6 align-center items-center align-middle content-center flex">
+                        <div class="w-full bg-grey-light rounded items-center align-middle align-center flex-1">
+                             <div class="bg-green-light text-xs leading-none py-1 text-center text-grey-darkest rounded " style="width: 100%"></div>
+                        </div>
+                    </div>
+                
+                    
+                    <div class="flex-1">
+                        <div class="w-10 h-10 bg-green mx-auto rounded-full text-lg text-white flex items-center">
+                            <span class="text-white text-center w-full"><i class="fa fa-check w-full fill-current white"></i></span>
+                        </div>
+                    </div>
+                
+                    <div class="w-1/6 align-center items-center align-middle content-center flex">
+                        <div class="w-full bg-grey-light rounded items-center align-middle align-center flex-1">
+                             <div class="bg-green-light text-xs leading-none py-1 text-center text-grey-darkest rounded " style="width: 20%"></div>
+                        </div>
+                    </div>
+                
+                    <div class="flex-1">
+                        <div class="w-10 h-10 bg-white border-2 border-grey-light mx-auto rounded-full text-lg text-white flex items-center">
+                            <span class="text-grey-darker text-center w-full">3</span>
+                        </div>
+                    </div>
+                
+                
+                    <div class="w-1/6 align-center items-center align-middle content-center flex">
+                        <div class="w-full bg-grey-light rounded items-center align-middle align-center flex-1">
+                             <div class="bg-green-light text-xs leading-none py-1 text-center text-grey-darkest rounded " style="width: 0%"></div>
+                        </div>
+                    </div>
+            
+            
+                    <div class="flex-1">
+                        <div class="w-10 h-10 bg-white border-2 border-grey-light mx-auto rounded-full text-lg text-white flex items-center">
+                            <span class="text-grey-darker text-center w-full">4</span>
+                        </div>
+                    </div>
+                
+                
+                    <div class="flex-1">
+                    </div>		
+                </div>
+                
+                <div class="flex text-xs content-center text-center">
+                    <div class="w-1/4">
+                        Invitation received
+                    </div>
+                    
+                    <div class="w-1/4">
+                        Personal details
+                    </div>
+                    
+                    <div class="w-1/4">
+                        Application details
+                    </div>
+                    
+                    <div class="w-1/4">
+                        Confirmation
+                    </div>			
+                </div>
+            </div>
+
+</div> -->
+
+    
+
+<!-- <div class="flex justify-center flex-col">
+
+    <div class="flex justify-center">
+<div class=" text-blue-500 fill-current  w-10">
+    <svg viewBox="0 0 100 100" xmlns="http://www.w3.org/2000/svg">
+            <circle cx="50" cy="50" r="50"/>
+    </svg>
+</div>
+    </div>
+
+    <div class="z-20 flex justify-center ">
+
+      
+            <div class="z-20 rounded-full w-5 h-5 bg-black flex justify-center "></div>
+
+        <!-- <div class="z-10 block rounded-full bg-gray-400 w-1 h-16 flex justify-center">
+            <div class="z-20 rounded-full w-5 h-5 bg-black flex justify-center "></div>
+        </div> -->
+    <!-- </div>
+        
+
+    <div class="z-20 flex justify-center ">
+            <div class="z-20 rounded-full w-5 h-5 bg-black flex justify-center ">
+                <div class="z-10 block rounded-full bg-gray-400 w-1 h-16"></div>
+            </div>
+    </div>
+
+    
+</div> -->
+
+<!-- ======================================================================================= -->
+<!-- -------------------- Work Experience -------------------- -->
+
+
+<div class="flex bg-white py-5 pb-10"><a name="workexperience"></a>
+    <div class=" flex-col py-5">
+
+        <v-header text="Work Experience" img="https://image.flaticon.com/icons/svg/1642/1642507.svg"></v-header>
+        <!-- <v-header text="Work Experience" img="https://image.flaticon.com/icons/svg/1366/1366504.svg"></v-header> -->
+
+        <div class="flex justify-center">
+            <v-job-item position="Software Developer Intern"
+                company="Data Access and Support Center, Kansas Geological Survey" date="May 2019 – present">
+                Designing, developing and documenting a web application that shows an interactive map of historical
+                Kansas im-agery using JavaScript, Tailwind CSS, ColdFusion and supporting tools like yarn, webpack, and
+                the ArcGIS API.
+            </v-job-item>
+        </div>
+
+
+        <div class="flex justify-center ">
+            <div class=" block rounded-full bg-gray-400 w-1 h-16"></div>
+        </div>
+
+        <div class="flex justify-center">
+            <v-job-item position="Technical & Research Assistant" company="Center for Design Research (CDR)"
+                date="August 2018 - present">
+                Various duties to assist the class professor such as: leading class discussions, assisting students, &
+                managing the technology used for class projects.
+            </v-job-item>
+        </div>
+
+        <div class="flex justify-center ">
+            <div class=" block rounded-full bg-gray-400 w-1 h-16"></div>
+        </div>
+
+        <div class="flex justify-center">
+            <v-job-item position="Graduate Research Assistant"
+                company="The Information and Telecommunication Technology Center" date="August 2018 – May 2019">
+                Research and designed a privacy-oriented surveillance data sharing system on a blockchain.
+            </v-job-item>
+        </div>
+
+        <div class="flex justify-center">
+            <div class=" block rounded-full bg-gray-400 w-1 h-16"></div>
+        </div>
+
+        <div class="flex justify-center">
+            <v-job-item position="Lead Computer Support Assistant" company="Kansas Geological Survey"
+                date="May 2016 – August 2018">
+                Managed Computer Support section in absence of supervisor.
+                Provided helpdesk and support to clients with hardware, software and networking problems.
+                Wrote and presented a presentation on introducing Docker to streamline development and to improve web
+                servers.
+                Worked as a fullstack website developer for a prototype inventory system utilizing Laravel and Docker.
+            </v-job-item>
+        </div>
+
+    </div>
+</div>
+
+
+<!-- ======================================================================================= -->
+<!-- -------------------- Notable Projects -------------------- -->
+
+<div class="w-full pt-12 pb-12"><a name="projects"></a>
+    <v-header text="Notable Projects" img="https://image.flaticon.com/icons/svg/1055/1055646.svg"></v-header>
+    <!-- <v-header text="Notable Projects" img="https://image.flaticon.com/icons/svg/1420/1420337.svg"></v-header> -->
+
+            
+    <div class="flex flex-wrap justify-center items-center w-full">
+            <v-column-item heading="MyJA" image="img/projectheaders/myjalogo.png">
+                Designed and developed a desktop app to help organize job applications. Currently in alpha.
+            </v-column-item>
+
+            <v-column-item heading="Cerner Nurse Health Tablet" image="img/projectheaders/cernerapp.png">
+                Untilized designer skills to design a tablet for Cerner that nurses can use to track patients in real time.
+            </v-column-item>
+
+            <v-column-item heading="Lawrence Bus Tracking system" image="img/projectheaders/busproject.svg">
+                Managed a team of 3 people to develop a working bus-tracking website that showed the location of buses in real time.
+            </v-column-item>
+
+            <v-column-item heading="Bluetooth lights" image="img/projectheaders/btlights.svg"> 
+                Led team of 3 people to develop wirelessly controlled lights using an Arduino Uno and Bluetooth module.
+            </v-column-item>
+    
+            <v-column-item heading="Delay Sum Beamformer" image="img/projectheaders/beamformer.png"> 
+                Lead designer and software coordinator on a team of 4 people to develop a device that can record sound 30 ft away.
+            </v-column-item>
+    
+            <v-column-item heading="Maltaa" image="img/projectheaders/maltaa.png">
+                Developed a desktop application, Android app and website for group communications on a team of three people.
+            </v-column-item>
+
+    </div>
+
+    <!-- <div class="flex flex-row justify-center items-center w-full py-4">
+        <v-column-item heading="Bluetooth lights">
+            Designed and developed a desktop app to help organize job applications.
+        </v-column-item>
+
+        <v-column-item heading="Delay Sum Beamformer">
+            Designed and developed a desktop app to help organize job applications.
+        </v-column-item>
+
+        <v-column-item heading="Lawrence Bus Tracking system">
+            
+        </v-column-item>
+</div> -->
+            
+</div>
+
+
+<!-- ======================================================================================= -->
+<!-- -------------------- Education -------------------- -->
+
+<div class=" bg-white pt-12"><a name="education"></a>
+    <div class="flex justify-center items-center flex-col w-full">
+        <!-- <v-header text="Education" img="https://image.flaticon.com/icons/svg/183/183334.svg"></v-header> -->
+        <v-header text="Education" img="https://image.flaticon.com/icons/svg/183/183338.svg"></v-header>
+        <!-- <v-header text="Education" img="https://image.flaticon.com/icons/svg/1651/1651632.svg"></v-header> -->
+        <!-- <v-header text="Education" img="https://image.flaticon.com/icons/svg/1045/1045250.svg"></v-header> -->
+        <!-- <v-header text="Education" img="https://image.flaticon.com/icons/svg/1817/1817722.svg"></v-header> -->
+                
+        <div class=" flex flex-col justify-center px-6 py-2 ">
+               
+            <v-item-education 
+                                degree="Microsoft Technology Associate (MTA)"
+                                year="Certified in Software Development Fundamentals."
+                                gpa="Completed Certification: September 2018"
+
+            ></v-item-education>
+
+            <div class="">
+            <v-item-education   school="The University of Kansas"
+                                degree="MS - Computer Engineering"
+                                gpa="CGPA = 3.53"
+                                year="Expected: December 2019."
+            ></v-item-education>
+            </div>
+
+            <v-item-education   school="The University of Kansas"
+                                degree="BS - Electrical Engineering"
+                                gpa="CGPA = 3.62"
+                                year="Graduated August 2017"
+            ></v-item-education>
+        
+                    
+        </div>
+                
+    </div>
+</div>
+
+<!-- ======================================================================================= -->
+<!-- -------------------- Footer -------------------- -->
+
+   
+
+<div class="bg-gray-800 block w-full py-5 px-10 text-gray-100">
+    <div class="flex justify-center text-sm">
+            <span>This site was built using Tailwind CSS & Vue.js. Used free images from 
+            <a href="https://konpa.github.io/devicon/" target="_blank" class=" underline">Devicon</a>  &
+            <a href="https://www.flaticon.com/" target="_blank" class=" underline">Flaticon</a>. Image credit goes to respective authors.</span> 
+    </div>
+   
+</div>
+ 
+
+<!-- ======================================================================================= -->
+
+</div>
+</body>
+
+<script src="js/svglines.js"></script>
+<script src="js/app.js"></script>
+
+</html>
