@@ -3,11 +3,12 @@
 ## 2.0.0
 * Overhauled website from scratch.
 * Implemented website using Vue, Vite & Tailwindcss.
+* Added automated deployment to pages.github.io.
 * Added the following components:
   * ProjectCards
   * ProjectTags
   * SectionContainer
-* Added the following widgets:
+* Added the following sections:
   * Footer
   * Header
   * Projects
