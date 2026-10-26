@@ -6,10 +6,10 @@
 </template>
 
 <script setup>
-import Header from "./widgets/Header.vue";
-import Projects from "./widgets/Projects.vue";
-import Skills from "./widgets/Skills.vue";
-import Footer from "./widgets/Footer.vue";
+import Header from "./sections/Header.vue";
+import Projects from "./sections/Projects.vue";
+import Skills from "./sections/Skills.vue";
+import Footer from "./sections/Footer.vue";
 </script>
 
 <style>
