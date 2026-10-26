@@ -6,7 +6,7 @@
       <img v-for="icon in languageIcons" v-bind:src="icon" class="h-20 pr-2">
     </div>
 
-    <h2 class="pt-10 pb-5">Web Development Icons</h2>
+    <h2 class="pt-10 pb-5">Web Development</h2>
     <div class="flex flex-row">
       <img v-for="icon in webDevelopmentIcons" v-bind:src="icon" class="h-20 pr-2">
     </div>
