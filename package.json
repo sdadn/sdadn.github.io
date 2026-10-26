@@ -5,8 +5,8 @@
   "repository": "https://github.com/sdadn/sdadn.github.io.git",
   "author": "Saad",
   "dependencies": {
-    "@vitejs/plugin-vue": "5.1.2",
-    "vite": "5.3.5",
+    "@vitejs/plugin-vue": "5.2.4",
+    "vite": "8.3.5",
     "vue": "3.4.35"
   },
   "devDependencies": {
