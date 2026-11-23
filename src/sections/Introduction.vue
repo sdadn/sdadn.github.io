@@ -6,6 +6,9 @@
         <span class="text-sky-700 px-1">Saad</span>
         <span class="text-gray-500 px-1">Adnan</span>
       </h1>
+      <div class="text-center text-2xl pb-5 text-gray-700 font-manjari">
+        {{ data.title }}
+      </div>
       <div class="text-center text-xl text-gray-500">
         {{ summary }}
       </div>
@@ -20,6 +23,7 @@
 <script setup>
 import { computed } from 'vue';
 import Image from '@/components/primitives/Image.vue';
+import data from '@/utils/contentLoader';
 
 const props = defineProps({
   experienceStart: String,
