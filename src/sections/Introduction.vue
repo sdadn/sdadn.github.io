@@ -32,7 +32,7 @@ const summary = computed(()=>{
   const yearsOfExperience = Number.parseFloat(((today - start)/(1000*3600*24*365))).toFixed(1);
 
   return props.summary.replace('{years}', yearsOfExperience);
-})
+});
 
 </script>
 
@@ -44,5 +44,4 @@ const summary = computed(()=>{
   font-weight: 700;
   font-style: normal;
 }
-
 </style>

@@ -1,6 +1,6 @@
 <template>
   <div class="font-commissioner min-d-dvh flex flex-col">
-    <Me v-bind:summary="content.summary" v-bind:experienceStart="content.yearsOfExperience"/>
+    <Introduction v-bind:summary="content.summary" v-bind:experienceStart="content.yearsOfExperience"/>
     <Skills />
     <Projects />
     <Footer />
@@ -10,7 +10,7 @@
 
 <script setup>
 import Header from "./sections/Header.vue";
-import Me from "./sections/Me.vue";
+import Introduction from "./sections/Introduction.vue";
 import Projects from "./sections/Projects.vue";
 import Skills from "./sections/Skills.vue";
 import Footer from "./sections/Footer.vue";
