@@ -1,9 +1,10 @@
 <template>
-<section-container title="Skills">
+<SectionContainer title="Skills">
+
 
     <h2 class="pb-5">Programming languages</h2>
     <div class="flex flex-row">
-      <img v-for="icon in languageIcons" v-bind:src="icon" class="h-20 pr-2">
+      <ImageCard v-for="icon in languageIcons" :imgSrc="icon.imgUrl" :text="icon.label"/>
     </div>
 
     <h2 class="pt-10 pb-5">Web Development</h2>
@@ -15,19 +16,37 @@
     <div class="flex flex-row">
       <img v-for="icon in iconURLS" v-bind:src="icon" class="h-20 pr-2">
     </div>
-</section-container>
+</SectionContainer>
 </template>
 
 <script setup>
-import SectionContainer from "../components/SectionContainer.vue";
+import SectionContainer from "@/components/SectionContainer.vue";
+import ImageCard from "@/components/primitives/ImageCard.vue";
+import Image from "@/components/primitives/Image.vue";
 
-const languageIcons = {
-  c: "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/c/c-original.svg",
-  cpp: "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/cplusplus/cplusplus-original.svg",
-  csh: "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/csharp/csharp-original.svg",
-  java: "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/java/java-original-wordmark.svg",
-  python: "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/python/python-original-wordmark.svg",
-}
+const languageIcons = [
+  {
+    label: 'C',
+    imgUrl: 'https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/c/c-original.svg'
+  },
+  {
+    label: 'C++',
+    imgUrl: 'https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/cplusplus/cplusplus-original.svg'
+  },
+  {
+    label: 'C#',
+    imgUrl: 'https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/csharp/csharp-original.svg'
+  },
+  {
+    label: 'Java',
+    imgUrl: 'https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/java/java-original-wordmark.svg'
+  },
+  {
+    label: 'Python',
+    imgUrl: 'https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/python/python-original-wordmark.svg'
+  },
+]
+
 
 const webDevelopmentIcons = {
   css: "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/css3/css3-original-wordmark.svg",

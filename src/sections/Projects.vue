@@ -8,8 +8,8 @@
 </template>
 
 <script setup>
-import SectionContainer from "../components/SectionContainer.vue";
-import ProjectCards from "../components/ProjectCards.vue";
-import {PROJECTS} from "../../data/content";
+import SectionContainer from "@/components/SectionContainer.vue";
+import ProjectCards from "@/components/ProjectCards.vue";
+import {PROJECTS} from "@data/content";
 
 </script>
