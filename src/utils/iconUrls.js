@@ -56,15 +56,23 @@ export const webDevelopmentIcons = [
 
 export const toolIcons = [
   {
+    label: 'Node JS',
+    imgUrl: 'https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/nodejs/nodejs-original-wordmark.svg'
+  },
+  {
+    label: 'NPM',
+    imgUrl: 'https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/npm/npm-original-wordmark.svg'
+  },
+  {
     label: 'Git',
     imgUrl: 'https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/git/git-original.svg'
   },
   {
-    label: 'Arduino',
-    imgUrl: 'https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/arduino/arduino-original-wordmark.svg'
-  },
-  {
     label: 'Bash',
     imgUrl: 'https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/bash/bash-original.svg'
+  },
+  {
+    label: 'Arduino',
+    imgUrl: 'https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/arduino/arduino-original-wordmark.svg'
   },
 ];

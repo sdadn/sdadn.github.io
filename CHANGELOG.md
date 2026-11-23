@@ -1,5 +1,10 @@
 # CHANGELOG
 
+## 2.2.0
+* Updated skills.
+* Added title.
+* Renamed projects section to porfolio.
+
 ## 2.1.0
 * Reworked Introduction section.
   * Added placeholder intro image.
