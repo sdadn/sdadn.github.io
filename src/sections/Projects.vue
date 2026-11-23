@@ -1,6 +1,6 @@
 <template>
 <section-container title="Projects">
-  <div class="grid-cols-4 flex flex-wrap">
+  <div class="grid grid-cols-4">
       <project-cards v-for="project in PROJECTS" v-bind:project="project"/>
   </div>
 </section-container>
